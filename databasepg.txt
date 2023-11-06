@@ -1,0 +1,10 @@
+       SkillAlberi.skbl161img = Image(source="mediaimg/alberivii.png", size_hint=(0.03, 0.03),
+                                       pos_hint={"x": 0.01, "top": 0.5199999999999998})
+        if SkillAlberi.skbl161 == "1": SkillAlberi.skbl161img.source = "mediaimg/alberiviib.png"
+        if SkillAlberi.skbl161 == "1": SkillAlberi.skbl1bonus += 7
+        box1bl1.add_widget(SkillAlberi.skbl161img)
+        SkillAlberi.skbl161but = Button(text="", pos_hint={"x": 0.01, "top": 0.5199999999999998},
+                                        size_hint=(0.03, 0.03),
+                                        on_release=partial(selezionaskillalbero, "skbl161", "vii"),
+                                        background_color=(1, 0, 0, 0))
+        box1bl1.add_widget(SkillAlberi.skbl161but)
